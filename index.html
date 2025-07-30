@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tobias Florian Müller – Arbeitssicherheit & Ausbildung</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     body {
       font-family: "Segoe UI", sans-serif;
@@ -11,10 +12,14 @@
       background-color: #f2f6f9;
       color: #333;
     }
+    header {
+      background-color: #004466;
+      padding: 0;
+    }
     header img {
       width: 100%;
-      max-height: 350px;
-      object-fit: cover;
+      height: auto;
+      display: block;
     }
     main {
       max-width: 900px;
@@ -35,6 +40,30 @@
     a {
       color: #004d66;
       text-decoration: none;
+    }
+    form {
+      background-color: #fff;
+      padding: 15px;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+    }
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #004d66;
+      color: white;
+      border: none;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -75,18 +104,32 @@
   </section>
 
   <section>
-    <h2>Was mir wichtig ist</h2>
-    <p>
-      Arbeitsschutz bedeutet Verantwortung – für Menschen, Prozesse und Ergebnisse. 
-      Ich verfolge mit Nachdruck eine sicherheitsbewusste und gut strukturierte Arbeitskultur. 
-      Sicherheit ist keine Pflicht – sie ist eine Grundhaltung.
-    </p>
+    <h2>PDF-Download</h2>
+    <p>Hier kannst du eine Beispiel-Broschüre herunterladen:</p>
+    <a href="beispiel.pdf" download>📄 Broschüre herunterladen (PDF)</a>
+  </section>
+
+  <section>
+    <h2>Kontaktformular</h2>
+    <form action="https://formspree.io/f/moqgzqjv" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" name="name" required>
+
+      <label for="email">E-Mail:</label>
+      <input type="email" name="_replyto" required>
+
+      <label for="message">Nachricht:</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit">Absenden</button>
+    </form>
+    <p><small>Hinweis: Deine Nachricht wird über Formspree.io weitergeleitet.</small></p>
   </section>
 
   <section>
     <h2>Hinweis</h2>
     <p>
-      Diese Homepage ist <strong>privat</strong> und dient ausschließlich dem <strong>Interessenaustausch</strong> 
+      Diese Homepage ist <strong>privat</strong> und dient ausschließlich dem <strong>Interessensaustausch</strong> 
       sowie der <strong>Vorstellung meiner Tätigkeit</strong>. Es werden keine kommerziellen Absichten verfolgt.
     </p>
   </section>
@@ -97,8 +140,8 @@
   <p><strong>Angaben gemäß § 5 TMG</strong></p>
   <p>
     Tobias Florian Müller<br>
-    Schaumanns Kamp 104<br>
-    21465 Reinbek<br>
+    [Straße & Hausnummer]<br>
+    [PLZ] [Ort]<br>
     Deutschland
   </p>
   <p><strong>Kontakt:</strong><br>
